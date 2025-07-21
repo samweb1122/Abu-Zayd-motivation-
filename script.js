@@ -464,15 +464,14 @@ const asmaulHusna = [
 
 // Populate select box
 window.addEventListener('DOMContentLoaded', () => {
-const select = document.getElementById('asmaulHusna');
-asmaulHusna.forEach((name, index) => {
-const option = document.createElement('option');
-option.value = index;
-option.textContent = ${name.arabic} - ${name.english};
-select.appendChild(option);
+  const select = document.getElementById('asmaulHusna');
+  asmaulHusna.forEach((name, index) => {
+    const option = document.createElement('option');
+    option.value = index;
+    option.textContent = `${name.arabic} - ${name.english}`; // <-- Fixed with backticks
+    select.appendChild(option);
+  });
 });
-});
-   
 // Play audio
 function playSelectedAudio() {
   const select = document.getElementById('asmaulHusna');
