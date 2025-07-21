@@ -461,12 +461,6 @@ const asmaulHusna = [
   { arabic: "ٱلرَّشِيدُ", english: "Ar-Rasheed (The Guide, Infallible Teacher)", audio: "audio/097.mp3" },
   { arabic: "ٱلصَّبُورُ", english: "As-Saboor (The Forbearing, The Patient)", audio: "audio/098.mp3" }
 ];
-const asmaulHusna = [
-{ arabic: "ٱلرَّحْمَـٰنُ", english: "Ar-Rahman (The Most Compassionate)", audio: "audio/001.mp3" },
-{ arabic: "ٱلرَّحِيمُ", english: "Ar-Raheem (The Most Merciful)", audio: "audio/002.mp3" },
-{ arabic: "ٱلْمَلِكُ", english: "Al-Malik (The King and Owner of Dominion)", audio: "audio/003.mp3" },
-// ... Add remaining 96 names with respective audio paths
-];
 
 // Populate select box
 window.addEventListener('DOMContentLoaded', () => {
