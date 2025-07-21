@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script src="script.js"></script>
+  <title>Abu Zayd Motivator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="mainContainer">
+    <h1>📖 Abu Zayd Motivator</h1>
+
+    <input type="text" id="userName" placeholder="Enter your name" />
+    <button onclick="saveUserName()">💾 Save</button>
+    <p id="greeting"></p>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
+ 
+
+    <select id="categorySelect" onchange="generateQuote()">
+      <option value="quran">📜 Qur'an</option>
+      <option value="hadith">🕌 Hadith</option>
+      <option value="discipline">🎯 Discipline</option>
+      <option value="success">🏆 Success</option>
+      <option value="general">💡 General</option>
+    </select>
+
+    <div class="quote-box" id="quoteDisplay">Loading quote...</div>
+
+    <div class="buttons">
+      <button onclick="generateQuote()">🔁 New Quote</button>
+      <button onclick="shareQuote()">📤 Share</button>
+    </div>
+
+    <p id="currentTime"></p>
+    <p><strong>Salah Times:</strong> <span id="salahTimes">Coming soon...</span></p>
+
+    <audio id="bgMusic" src="background.mp3" autoplay loop></audio>
+    
+       
+    <!-- 99 Names of Allāh -->
+<div class="names-container">
+  <h4>🌟 99 Names of Allāh (Asma’ul Husna)</h4>
+
+  <select id="asmaulHusna" onchange="playSelectedAudio()">
+    <option disabled selected>-- Select a Name --</option>
+  </select>
+
+  <button onclick="playSelectedAudio()">🔊 Play Pronunciation</button>
+  <p id="selectedNameMeaning"></p>
+  
+  <!-- Download link -->
+  <p>
+    📥 <a href="99names.pdf" download>Download 99 Names of Allāh (PDF)</a>
+  </p>
+
+
+    <footer>© 2025 Abu Zayd Solutions. All Rights Reserved.</footer>
+  </div>
+</body>
+    </html>
