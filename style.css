@@ -113,3 +113,31 @@ footer {
 .download-social a:hover {
   text-decoration: underline;
 }
+
+    select#asmaulHusna {
+  padding: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+audio#asmaulAudio {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.btn-download {
+  background-color: #1c5d99;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn-download:hover {
+  background-color: #174776;
+}
