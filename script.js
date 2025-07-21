@@ -468,18 +468,16 @@ window.addEventListener('DOMContentLoaded', () => {
   asmaulHusna.forEach((name, index) => {
     const option = document.createElement('option');
     option.value = index;
-    option.textContent = `${name.arabic} - ${name.english}`; // <-- Fixed with backticks
+    option.textContent = `${name.arabic} - ${name.english}`;
     select.appendChild(option);
   });
+
+  select.addEventListener('change', () => {
+    const audio = document.getElementById('asmaulAudio');
+    const selectedIndex = select.value;
+    if (asmaulHusna[selectedIndex]) {
+      audio.src = asmaulHusna[selectedIndex].audio;
+      audio.play();
+    }
+  });
 });
-// Play audio
-function playSelectedAudio() {
-  const select = document.getElementById('asmaulHusna');
-  const index = select.value;
-  if (index) {
-    const name = asmaulHusna[index];
-    document.getElementById('selectedNameMeaning').textContent = `📝 Meaning: ${name.english}`;
-    const audio = new Audio(name.audio);
-    audio.play();
-  }
-}
