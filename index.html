@@ -29,16 +29,7 @@
 
     <div class="quote-box" id="quoteDisplay">Loading quote...</div>
 
-    <select id="asmaulHusna">
-  <option selected disabled>Select a Name</option>
-</select>
-<audio id="asmaulAudio" controls></audio>
-
-<div style="margin-top: 20px;">
-  <a href="99names-download.pdf" class="btn-download" download>📥 Download All 99 Names (PDF)</a>
-  
-</div>
-
+    
     <div class="buttons">
       <button onclick="generateQuote()">🔁 New Quote</button>
       <button onclick="shareQuote()">📤 Share</button>
@@ -54,17 +45,16 @@
 <div class="names-container">
   <h4>🌟 99 Names of Allāh (Asma’ul Husna)</h4>
 
-  <select id="asmaulHusna" onchange="playSelectedAudio()">
-    <option disabled selected>-- Select a Name --</option>
-  </select>
+  <select id="asmaulHusna">
+  <option selected disabled>Select a Name</option>
+</select>
+<audio id="asmaulAudio" controls></audio>
 
-  <button onclick="playSelectedAudio()">🔊 Play Pronunciation</button>
-  <p id="selectedNameMeaning"></p>
+<div style="margin-top: 20px;">
+  <a href="99names-download.pdf" class="btn-download" download>📥 Download All 99 Names (PDF)</a>
   
-  <!-- Download link -->
-  <p>
-    📥 <a href="99names.pdf" download>Download 99 Names of Allāh (PDF)</a>
-  </p>
+</div>
+
 
 
     <footer>© 2025 Abu Zayd Solutions. All Rights Reserved.</footer>
