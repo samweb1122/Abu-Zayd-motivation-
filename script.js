@@ -462,6 +462,15 @@ const asmaulHusna = [
   { arabic: "ٱلصَّبُورُ", english: "As-Saboor (The Forbearing, The Patient)", audio: "audio/098.mp3" }
 ];
 
+const audioPlayer = new Audio();
+
+document.getElementById('asmaulHusna').addEventListener('change', function () {
+  const selected = asmaulHusna[this.value];
+  if (selected) {
+    audioPlayer.src = selected.audio;
+    audioPlayer.play();
+  }
+});
 // Populate select box
 window.addEventListener('DOMContentLoaded', () => {
   const select = document.getElementById('asmaulHusna');
