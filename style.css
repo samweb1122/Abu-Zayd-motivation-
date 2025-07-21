@@ -134,3 +134,101 @@ input[type="text"] {
 #socialMedia a:hover {
   color: #007bff;
 }
+
+  /* 99 Names Section */
+.names-section {
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.names-section h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.name-select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.name-select select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.audio-btn {
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.audio-btn:hover {
+  background-color: #00796b;
+}
+
+.download-link {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.download-link:hover {
+  background-color: #218838;
+}
+
+/* Social links and donation */
+.social-donate {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+}
+
+.donate-btn {
+  background-color: #ffc107;
+  color: #212529;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.donate-btn:hover {
+  background-color: #e0a800;
+  }
