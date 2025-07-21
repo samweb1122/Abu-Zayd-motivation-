@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right top, #004d40, #00695c, #00796b, #00897b, #009688);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1em;
+  width: 100%;
+}
+
+.quote-box {
+  font-size: 1.1em;
+  background-color: #ffffff10;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+.buttons button {
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #00796b;
+}
+
+footer {
+  margin-top: 15px;
+  font-size: 0.85em;
+  opacity: 0.7;
+}
+
+body.light-theme {
+  background: linear-gradient(to right top, #f0f0f0, #e0f7fa);
+  color: #000;
+}
+
+.light-theme .container {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+}
+
+/* Section container */
+#namesSection {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+#namesSection h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+/* Select dropdown */
+#allahNames {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Download link */
+#downloadLink {
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+#downloadLink:hover {
+  text-decoration: underline;
+}
+
+/* Social media */
+#socialMedia {
+  text-align: center;
+  margin-top: 20px;
+}
+#socialMedia a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+}
+#socialMedia a:hover {
+  color: #007bff;
+}
