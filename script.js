@@ -459,18 +459,9 @@ const asmaulHusna = [
   { arabic: "ٱلْبَاقِي", english: "Al-Baaqi (The Everlasting)", audio: "audio/095.mp3" },
   { arabic: "ٱلْوَارِثُ", english: "Al-Waarith (The Inheritor, The Heir)", audio: "audio/096.mp3" },
   { arabic: "ٱلرَّشِيدُ", english: "Ar-Rasheed (The Guide, Infallible Teacher)", audio: "audio/097.mp3" },
-  { arabic: "ٱلصَّبُورُ", english: "As-Saboor (The Forbearing, The Patient)", audio: "audio/098.mp3" }
+  { arabic: "ٱلصَّبُورُ", english: "As-Saboor (The Forbearing, The Patient)", audio: "audio/098.mp3" },
 ];
 
-const audioPlayer = new Audio();
-
-document.getElementById('asmaulHusna').addEventListener('change', function () {
-  const selected = asmaulHusna[this.value];
-  if (selected) {
-    audioPlayer.src = selected.audio;
-    audioPlayer.play();
-  }
-});
 // Populate select box
 window.addEventListener('DOMContentLoaded', () => {
   const select = document.getElementById('asmaulHusna');
@@ -482,11 +473,8 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   select.addEventListener('change', () => {
-    const audio = document.getElementById('asmaulAudio');
-    const selectedIndex = select.value;
-    if (asmaulHusna[selectedIndex]) {
-      audio.src = asmaulHusna[selectedIndex].audio;
-      audio.play();
-    }
+    const selected = asmaulHusna[select.value];
+    const audio = new Audio(selected.audio);
+    audio.play();
   });
 });
