@@ -141,3 +141,39 @@ audio#asmaulAudio {
 .btn-download:hover {
   background-color: #174776;
 }
+
+
+  .asmaul-section {
+  padding: 1em;
+  background: #f8f8f8;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+.asmaul-section select,
+.asmaul-section .btn {
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1rem;
+}
+.asmaul-section .btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.asmaul-section .btn:hover {
+  background: #218838;
+}
+.social-links {
+  margin-top: 20px;
+}
+.social-links a {
+  color: #0066cc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.social-links a:hover {
+  text-decoration: underline;
+  }
